@@ -1,0 +1,145 @@
+.add_devices{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.apps_devices {
+    width: 102px;
+    height: 18px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #00adf2;
+  }
+
+  .apps_devices:before {
+    content: "";
+    position: absolute;
+    background-image: url(./assets/Arrow.jpg);
+    width: 10px;
+    height: 24px;
+    background-repeat: no-repeat;
+    top: -4px;
+    left: 2px;
+}
+
+.add_iGlucose_Meter {
+    width: 410px;
+    height: 31px;
+    font-family: HelveticaNeue;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #313131;
+  }
+  .connect_your_iGlucos {
+    width: 502px;
+    height: 36px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #313131;
+  }
+  .imgContent{
+    margin: 32px;
+    margin-left: 100px;
+  }
+  .imgDevice{
+    width: 300px;
+  }
+  label {
+    width: 151px;
+    height: 18px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #313131;
+  }
+
+  .error {
+    height: 18px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #d51e00;
+  }
+
+  .disable_button {
+    width: 131px;
+    height: 32px;
+    border-radius: 16px;
+    border: solid 1px #cccccc;
+    background-color: #f1f1f1;
+    font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: #979797;
+  }
+  .pop_body{
+      h4{
+        height: 24px;
+        font-family: HelveticaNeue;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #313131;
+        margin-top: 17px;
+      }
+      p{
+        height: 38px;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #313131;
+        margin-top: 21px;
+      }
+      .pop_button {
+        width: 93px;
+        height: 32px;
+        border-radius: 16px;
+        border: solid 1px #00adf2;
+        background-color: #00adf2;
+        font-family: HelveticaNeue;
+        font-family: HelveticaNeue;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+      }
+  }
