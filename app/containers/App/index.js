@@ -9,7 +9,7 @@ import { makeSelectUserName } from './selectors'
 
 class App extends React.Component {
   componentDidMount () {
-  //  this.props.getUserName()
+    this.props.getUserName()
     console.log(this.props.userName)
   }
   render () {
