@@ -7,6 +7,4 @@ const makeSelectUserName = () => createSelector(
   (user) => user.get('name')
 )
 
-export {
-  makeSelectUserName
-}
+export { makeSelectUserName }

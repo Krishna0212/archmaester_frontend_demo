@@ -1,6 +1,6 @@
-import React from 'react'
-import { shallow } from 'enzyme'
-import { create } from 'react-test-renderer'
+// import React from 'react'
+// import { shallow } from 'enzyme'
+// import { create } from 'react-test-renderer'
 
 describe('Addition', () => {
   it('knows that 2 and 2 make 6', () => {

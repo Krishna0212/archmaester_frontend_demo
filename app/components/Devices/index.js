@@ -8,15 +8,21 @@ import classNames from 'classnames'
 class Devices extends React.Component {
   constructor (props) {
     super(props)
-    this.state = { visible: false }
+    this.state = {
+      visible: false 
+    }
   }
 
   show () {
-    this.setState({ visible: true })
+    this.setState({
+      visible: true 
+    })
   }
 
   hide () {
-    this.setState({ visible: false })
+    this.setState({
+      visible: false 
+    })
   }
 
   render () {

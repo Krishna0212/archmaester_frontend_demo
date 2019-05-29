@@ -47,20 +47,25 @@ function checkStatus (response) {
  *
  * @return {object}           The response data
  */
-export default function request (url, options = {}) {
+export default function request (url, options = {
+
+}) {
   const cancelTokenSource = axios.CancelToken.source()
   // console.log('cancelTokenSource.token', cancelTokenSource.token);
-  const promise = axios(url, Object.assign(options, { cancelToken: cancelTokenSource.token }))
+  const promise = axios(url, Object.assign(options, {
+    cancelToken: cancelTokenSource.token 
+  }))
     .then(checkStatus)
     .catch((error) => {
-      if (error.message !== CANCEL_OPERATION) {
-        if (Object.hasOwnProperty.call(error, 'config')) {
+      // if (error.message !== CANCEL_OPERATION) {
+      //   if (Object.hasOwnProperty.call(error, 'config')) {
 
-        } else {
+      //   } else {
 
-        }
-      }
+      //   }
+      // }
       /* istanbul ignore next */
+
       const errorObj = new Error((error && error.response && error.response.statusText) || error.message)
       errorObj.response = error && error.response
       errorObj.code = error && error.code // ECONNABORTED

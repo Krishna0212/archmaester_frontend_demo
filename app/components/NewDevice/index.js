@@ -22,22 +22,30 @@ class NewDevice extends React.Component {
   }
 
   handleChange (evt) {
-    this.setState({ [evt.target.name]: evt.target.value, [`${evt.target.name}Error`]: '' })
+    this.setState({
+      [evt.target.name]: evt.target.value, [`${evt.target.name}Error`]: '' 
+    })
   }
 
   show () {
-    this.setState({ visible: true })
+    this.setState({
+      visible: true 
+    })
   }
 
   hide () {
-    this.setState({ visible: false })
+    this.setState({
+      visible: false 
+    })
   }
 
   // serial number Validation
   formValidation () {
     let isValid = false
     if (this.state.serialNumber === '') {
-      this.setState({ serialNumberError: 'Serial number is required' })
+      this.setState({
+        serialNumberError: 'Serial number is required' 
+      })
       isValid = true
     } else if (this.state.serialNumber !== this.state.confirmSerialNumber) {
       this.setState({
@@ -46,14 +54,16 @@ class NewDevice extends React.Component {
       isValid = true
     }
     if (!isValid) {
-      this.props.history.push('/devicestatus')
+      // this.props.history.push('/devicestatus')
     }
   }
 
   // Confirm serial Number Validation
   cSerialNumberValidation () {
     if (this.state.serialNumber !== this.state.confirmSerialNumber) {
-      this.setState({ popUpHeader: 'Invalid serial number', popText: 'Please make sure serial number entered is correct and try again', visible: true })
+      this.setState({
+        popUpHeader: 'Invalid serial number', popText: 'Please make sure serial number entered is correct and try again', visible: true 
+      })
     }
   }
 

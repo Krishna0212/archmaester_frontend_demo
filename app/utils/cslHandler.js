@@ -10,7 +10,9 @@ export const throwCsl = (response, url, status = 503) => {
   // This is what any calls using "handleApiErrors" will receive
   const error = new Error(CSL_ERROR_TYPE)
   error.reportingType = CSL_ERROR_TYPE
-  error.response = { status, cslResponse: response }
+  error.response = {
+    status, cslResponse: response 
+  }
 
   throw error
 }
