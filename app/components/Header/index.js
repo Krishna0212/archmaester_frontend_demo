@@ -10,7 +10,7 @@ class Header extends React.Component {
           <a href='/'><img src={logo} alt="" className={style.glooko_logo_white}/></a>
         </div>
         <div className={style.profile_name_parent}>
-          <span className={style.profile_name}>Demo</span>
+          <span className={style.profile_name}>Demo live</span>
         </div>
         <div className={style.parent}>
           <span className={style.settings}> Settings</span>
